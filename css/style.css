@@ -15,6 +15,12 @@ ul li{list-style-type: none;}
 img{vertical-align: top;}
 h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
 
+
+.conteiner {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
 /*Шапка сайта*/
 
 header {
@@ -23,6 +29,7 @@ header {
     width: 100%;
     height: 130px;
     background: rgba(100, 10, 202, 0.297);
+    background-repeat: no-repeat;
 }
 
 .header {
@@ -51,7 +58,7 @@ img {
     margin: auto;
     padding: 0px 6px 0px 0px;
     height: 100%;
-    width: 800px;
+    width: 60%;
 }
 
 .navigation a {
@@ -166,6 +173,7 @@ button {
     border-radius: 10px;
     padding: 0;
     letter-spacing: 18px;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.342);;
 }
 
 button:hover {
@@ -173,8 +181,8 @@ button:hover {
 }
 
 button:active {
-    transform: translateY(1px);
-    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.342);;
+    transform: translateY(2px);
+    box-shadow: 0 1px 4px rgba(255, 255, 255, 0.342);;
 }
 
 /*Второй блок*/
@@ -230,6 +238,8 @@ hr {
     width: 60%;
     height: 41px;
     margin: 50px 0px 0px 5px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.842);
 }
 
 .button_secondBlock button {
@@ -237,9 +247,8 @@ hr {
 }
 
 .button_secondBlock:active {
-    transform: translateY(1px);
-    border-radius: 15px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.842);;
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.842);
 }
 
 /*Третий блок*/
@@ -283,4 +292,58 @@ hr {
 .in-text_thirdBlock {
     text-align: center;
     font-size: 19px;
+}
+
+/*Четвертый блок*/
+
+.forthBlock {
+    height: 80%;
+}
+
+.f-th_flex {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.f-th_flex__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.smal-text {
+    color: darkgrey;
+    font-size: 30px;
+    line-height: 12px;
+}
+.big_text {
+    color: #ff0062;
+    font-size: 56px;
+}
+
+.f-th_flex__body {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 -40px;
+}
+
+.f-th_flex__body__item {
+    display: flex;
+    flex-direction: column;  
+    flex: 0 1 50%;
+    margin: 47px 0px;
+    padding: 0 40px;
+}
+
+.f-th_flex__body__item__title {
+    font-size: 36px;
+    font-weight: 560;
+    text-shadow: 1px 1px #ff0062;
+    letter-spacing: 2px;
+}
+.f-th_flex__body__item__text {
+    margin: 15px 0 0 0;
+    font-size: 28px;
+    text-align: justify;
 }
